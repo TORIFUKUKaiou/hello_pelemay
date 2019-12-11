@@ -56,7 +56,12 @@ defmodule HelloPelemay.MixProject do
       {:nerves_system_rpi3a, "~> 1.8", runtime: false, targets: :rpi3a},
       {:nerves_system_rpi4, "~> 1.8", runtime: false, targets: :rpi4},
       {:nerves_system_bbb, "~> 2.3", runtime: false, targets: :bbb},
-      {:nerves_system_x86_64, "~> 1.8", runtime: false, targets: :x86_64}
+      {:nerves_system_x86_64, "~> 1.8", runtime: false, targets: :x86_64},
+      {:pelemay, github: "zeam-vm/pelemay", branch: "master"},
+
+      # Benchmark dependencies
+      {:benchfella, "~> 0.3.5"},
+      {:flow, "~> 0.14.3"}
     ]
   end
 
